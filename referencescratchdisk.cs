@@ -76,3 +76,17 @@ class StayMove(BossModule module) : Components.StayMove(module)
         }
     }
 }
+
+class Nox : Components.StandardChasingAOEs
+{
+    public Nox(BossModule module) : base(module, new AOEShapeCircle(10), ActionID.MakeSpell(AID.NoxStart), ActionID.MakeSpell(AID.NoxEnd), 5.5f, 1.6f, 5) //float moveDistance, float secondsBetweenActivations, int maxCasts
+    {
+        ExcludedTargets = Raid.WithSlot(true).Mask();
+    }
+
+    public override void OnEventIcon(Actor actor, uint iconID)
+    {
+        if (iconID == (uint)IconID.Nox)
+            ExcludedTargets.Clear(Raid.FindSlot(actor.InstanceID));
+    }
+}
