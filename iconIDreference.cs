@@ -7,3 +7,5 @@
   267// AccelerationBomb
   316// Styx, stack, multihit
   326// chain
+  376// used for dog gaze in V02
+  2056// status given to mobs when chasing
