@@ -2,6 +2,8 @@
   62// stacks
   70
   161// stackmarker
+  167// RotateCW
+  168// RotateCCW
   197// Nox, chasing AOE marker
   218// tankbuster
   267// AccelerationBomb
