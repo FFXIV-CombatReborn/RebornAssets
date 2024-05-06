@@ -90,3 +90,12 @@ class Nox : Components.StandardChasingAOEs
             ExcludedTargets.Clear(Raid.FindSlot(actor.InstanceID));
     }
 }
+
+class ExampleMobChaseAOE(BossModule module) : Components.GenericAOEs(module)
+{
+    private IReadOnlyList<Actor> _spirits = module.Enemies(OID.ExampleMobChaseAOE);
+
+    private static readonly AOEShapeCircle _shape = new(3);
+
+    public override IEnumerable<AOEInstance> ActiveAOEs(int slot, Actor actor) => _spirits.Where(actor => !actor.IsDead).Select(b => new AOEInstance(_shape, b.Position));
+}
