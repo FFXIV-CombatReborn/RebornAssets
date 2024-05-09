@@ -2,6 +2,7 @@
   23// AhkRhai, spread marker
   62// stacks
   70
+  100// stack
   161// stackmarker
   167// RotateCW
   168// RotateCCW
