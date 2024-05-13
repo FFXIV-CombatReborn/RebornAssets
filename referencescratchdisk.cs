@@ -34,6 +34,17 @@ class CastLineOfSightAOE(BossModule module) : Components.CastLineOfSightAOE(modu
 {
     public override IEnumerable<Actor> BlockerActors() => Module.Enemies(OID.CastLineOfSightAOE).Where(a => !a.IsDead);
 }
+
+class CastLineOfSightAOE2(BossModule module) : Components.GenericLineOfSightAOE(module, ActionID.MakeSpell(AID.CastLineOfSightAOE2), 60, false)
+{
+    public override void OnEventIcon(Actor actor, uint iconID)
+    {
+        if (iconID == (uint)IconID.CastLineOfSightAOEID)
+        {
+            Modify(actor.Position, Module.Enemies(OID.CastLineOfSightAOE).Where(c => c != actor && !Comet.IsFinished(c)).Select(c => (c.Position, c.HitboxRadius)));
+        }
+    }
+}
                                             
 class StayMove(BossModule module) : Components.StayMove(module)
 {
