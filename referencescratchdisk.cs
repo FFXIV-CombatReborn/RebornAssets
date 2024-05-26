@@ -6,6 +6,7 @@ class SelfTargetedAOEs(BossModule module) : Components.SelfTargetedAOEs(module, 
 class SelfTargetedAOEs(BossModule module) : Components.SelfTargetedAOEs(module, ActionID.MakeSpell(AID.SelfTargetedAOEs), new AOEShapeCircle(9));
 class SelfTargetedAOEs(BossModule module) : Components.SelfTargetedAOEs(module, ActionID.MakeSpell(AID.SelfTargetedAOEs), new AOEShapeRect(60, 7.5f));
 class SelfTargetedAOEs(BossModule module) : Components.SelfTargetedAOEs(module, ActionID.MakeSpell(AID.SelfTargetedAOEs), new AOEShapeDonut(7, 60));
+class SelfTargetedAOEs(BossModule module) : Components.SelfTargetedAOEs(module, ActionID.MakeSpell(AID.SelfTargetedAOEs), new AOEShapeCross(30, 5));
 
 class LocationTargetedAOEs(BossModule module) : Components.LocationTargetedAOEs(module, ActionID.MakeSpell(AID.LocationTargetedAOEs), 6);
 class Towers(BossModule module) : Components.CastTowers(module, ActionID.MakeSpell(AID.Explosion), 6);
