@@ -6,10 +6,13 @@
   87// Burn
   100// stackmarker
   101// spreadmarker
+  136// PhysicalVulnerabilityDown
+  137// MagicVulnerabilityDown
   139// spreadmarker
   161// stackmarker
   167// RotateCW
   168// RotateCCW
+  196// Stackmarker
   197// Nox, chasing AOE marker
   218// tankbuster
   267// AccelerationBomb
