@@ -16,6 +16,7 @@
   196// Stackmarker
   197// Nox, chasing AOE marker
   218// tankbuster
+  230// tankbuster (dualfire)
   267// AccelerationBomb
   316// Styx, stack, multihit
   326// chain
