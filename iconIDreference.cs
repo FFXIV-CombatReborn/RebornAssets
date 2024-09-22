@@ -5,6 +5,7 @@
   62// stackmarker
   70//
   87// Burn
+  99// spreadmarker
   100// stackmarker
   101// spreadmarker
   136// PhysicalVulnerabilityDown
