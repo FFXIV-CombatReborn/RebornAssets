@@ -18,6 +18,8 @@ class ChargeAOEs(BossModule module) : Components.ChargeAOEs(module, ActionID.Mak
 class Chains(BossModule module) : Components.Chains(module, (uint)TetherID.Chains, ActionID.MakeSpell(AID.Chains));
 
 class SpreadFromCastTargets(BossModule module) : Components.SpreadFromCastTargets(module, ActionID.MakeSpell(AID.SpreadFromCastTargets), 6);
+class SpreadFromIcon(BossModule module) : Components.SpreadFromIcon(module, (uint)IconID.Spreadmarker, ActionID.MakeSpell(AID.SpreadFromIcon), 6, 4);
+
 class StackWithCastTargets(BossModule module) : Components.StackWithCastTargets(module, ActionID.MakeSpell(AID.StackWithCastTargets), 6, 8);
 
 class KnockbackFromCastTarget(BossModule module) : Components.KnockbackFromCastTarget(module, ActionID.MakeSpell(AID.KnockbackFromCastTarget), 30, stopAtWall: true);
