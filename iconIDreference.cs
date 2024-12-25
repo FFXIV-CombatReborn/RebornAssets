@@ -22,6 +22,7 @@
   267// AccelerationBomb
   316// Styx, stack, multihit
   326// chain
+  342// tankbuster
   376// used for dog gaze in V02
   471// tankbuster cleave
   1072// AccelerationBomb
